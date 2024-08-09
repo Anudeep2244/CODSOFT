@@ -3,7 +3,7 @@ import random
 def get_choice():
     choices = ["rock", "paper", "scissors"]
     while True:
-        user_choice = input("\nEnter your choice [ rock, paper, scissors ]: ").lower()
+        user_choice = input("\nEnter your choice [ rock, paper, scissors ]: ").lower().strip()
         if user_choice in choices:
             return user_choice, random.choice(choices)
         else:
@@ -11,7 +11,7 @@ def get_choice():
 
 def get_continue_choice():
     while True:
-        cont = input("Do you want to play again [yes/no]: ").lower()
+        cont = input("Do you want to play again [yes/no]: ").lower().strip()
         if cont in ["yes", "no"]:
             return cont
         else:
