@@ -89,7 +89,7 @@ int main() {
                 cout << "Enter task number to remove: ";
                 cin >> index;
                 if (index < 1 || index > count) {
-                    cout << (index == 0 ? "The list is empty." : "Invalid index.") << endl;
+                    cout << (count == 0 ? "The list is empty." : "Invalid index.") << endl;
                 }
                 else {
                     string rm_task = t[index - 1].get_desc();
