@@ -79,7 +79,7 @@ int main() {
                 cout << "Enter task number to mark as completed: ";
                 cin >> index;
                 if (index < 1 || index > count) {
-                    cout << (index == 0 ? "The list is empty." : "Invalid index.") << endl;
+                    cout << (count == 0 ? "The list is empty." : "Invalid index.") << endl;
                 }
                 else {
                     t[index - 1].set_cmplt();
