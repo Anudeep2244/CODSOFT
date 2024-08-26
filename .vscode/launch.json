@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "ATMSystem",
+      "request": "launch",
+      "mainClass": "ATMSystem",
+      "projectName": "CODSOFT_a3234e99"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
