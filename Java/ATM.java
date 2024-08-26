@@ -15,7 +15,8 @@ class ATMSystem {
     public void withdraw(float amount){
         if (amount > balance){
             System.out.println("Insufficient Balance.");
-        } else {
+        } 
+        else {
             balance -= amount;
             System.out.println("Withdrawal successful.");
         }
@@ -30,7 +31,7 @@ public class ATM {
     public static void main(String[] args) {
         ATMSystem user = new ATMSystem();
         Scanner scanner = new Scanner(System.in);
-        int choice;
+        int ch;
         float amount;
         do { 
             System.out.println("\n1. Deposit");
@@ -38,15 +39,16 @@ public class ATM {
             System.out.println("3. Check Balance");
             System.out.println("4. Exit");
             System.out.print("Enter your option: ");
-            choice = scanner.nextInt();
+            ch = scanner.nextInt();
 
-            switch (choice) {
+            switch (ch) {
                 case 1: 
                     System.out.print("Enter the amount you want to deposit: ");
                     amount = scanner.nextFloat();
                     if (amount > 0){
                         user.deposit(amount);
-                    } else {
+                    } 
+                    else {
                         System.out.println("Invalid amount.");
                     }
                     break;
@@ -56,7 +58,8 @@ public class ATM {
                     amount = scanner.nextFloat();
                     if (amount > 0) {
                         user.withdraw(amount);
-                    } else {
+                    } 
+                    else {
                         System.out.println("Invalid amount.");
                     }
                     break;
@@ -72,7 +75,7 @@ public class ATM {
                 default: 
                     System.out.println("Invalid input, please try again.");
             }
-        } while (choice != 4);
+        } while (ch != 4);
         scanner.close();
     }
 }
