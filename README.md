@@ -1,6 +1,6 @@
 # 🚀 Internship Repository
 
-Welcome to my internship repository! 🎉 Here you'll find a collection of projects and code that I developed during my internship, where I focused on: 
+Welcome to my internship repository! 🎉 Here you'll find a collection of projects and code that I developed during my internship at [**CodSoft**](https://www.linkedin.com/company/codsoft/) ([Website](https://www.codsoft.in/)), where I focused on:
 
 - 🐍 **Python**
 - ☕ **Java**
